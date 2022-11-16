@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:#282C34;
+    width: 100%;
+  
+    height: 100vh;
+    color:#fff;
+    display: grid;
+    place-items: center;
+    
+    font-family: monospace;
+   
+    isolation:isolate;
+    overflow: hidden;
+    font-size:2rem;
+   
+    
+}
+.container::after {
+    position: absolute;
+    content:"";
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color:#FF355C;
+    transform: translateX(var(--offset,50%));
+  
+    z-index:-1;
+    transition: all 0.09s ease-in-out;
+
+}
+
+img{
+    height:39px;
+}
+
+.logo,.dropdown,.sign-up,.left-side,header{
+    display: flex;
+    align-items: center;
+}
+.dropdown{
+    margin-left:1.25em;
+}
+.right-side{
+    margin-left: 42rem;
+}
+
+.text-center{
+    text-align: center;
+}
+.hero-last{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:9rem;
+}
+
+
+header{
+    margin-top: -3rem;
+}
+
+
+
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -7rem;
+}
+
+.sign-up{
+    color:#fff;
+    font-size:1rem;
+    background-color: #FF355C;
+    padding:8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sign-up p{
+    margin-right:.5em;
+}
+.logo h3{
+    font-size:1.75rem;
+}
+.dropdown{
+    font-size: 1rem;
+    background-color: #282C3480;
+    padding:8px 12px;
+    border-radius:5px;
+}
+.dropdown p{
+    margin-right:.5em;
+}
